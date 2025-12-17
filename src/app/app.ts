@@ -9,6 +9,6 @@ import { NewDirective }  from './newDirective';
                <second-directive [firstName]="author"></second-directive>`
 })
 export class App {
-    title = 'This is Angular!';
+    title = 'This is Angular! Hello!';
     author = "Joyce.";
 }
