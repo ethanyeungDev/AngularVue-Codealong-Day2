@@ -7,4 +7,8 @@ export class MyDataService {
     getNames() {
         return this.names;
     }
+    returnMyName(): string {
+    const name: string = 'Bateman';
+    return name;
+    }
 }

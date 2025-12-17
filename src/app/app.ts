@@ -21,5 +21,6 @@ export class App {
     constructor(@Inject(MyDataService) myDataService: MyDataService) {
         // Use service to call getNames() method.
         this.names = myDataService.getNames();
+        this.names.push(myDataService.returnMyName());
     }
 }
