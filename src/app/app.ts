@@ -1,12 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NewDirective }  from './newDirective';
+import { otherDirective }  from './newDirective';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [NewDirective],
+  template: `<h1>Hello world!  {{title}}</h1><second-directive></second-directive>`
 })
 export class App {
-  protected readonly title = signal('angular_codealong_day2');
+    public title = 'This is Angular!';
 }
